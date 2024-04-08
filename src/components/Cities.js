@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import "../styles/Cities.css";
 
 
-function Cities(props) {
+export default function Cities(props) {
     const [cities, setCities] = useState([]);
     
     if(!cities.length) {
@@ -26,5 +26,3 @@ function Cities(props) {
         </>
     )
 }
-
-export default Cities;

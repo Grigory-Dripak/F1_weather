@@ -11,7 +11,7 @@ export default function Request(props)  {
     const [weathers, setWeathers] = useState([]);
     const [fixPeriod, setFixPeriod] = useState(props.period);
     const Api_key = "17d4ea840208f6609c79eb6b262f4782";
-    // 
+    
     function sendRequest() {
         if (props.period === "5 days") {
             const OpenWeatherUrl = `http://api.openweathermap.org/data/2.5/forecast?q=${props.city}&units=metric&APPID=${Api_key}`;

@@ -1,9 +1,8 @@
 import React from "react";
 
 export default function Weather(props) {
-    // console.log("props.period from Details_of_weather", props.period);
-    const now = new Date()
-
+    const now = new Date();
+    
     return (
         <tr>
             <td>{ props.period === "5 days" && props.details.dt_txt }
